@@ -20,4 +20,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest tests/app.py
+        python -m unittest -v tests/app.py
