@@ -14,5 +14,8 @@ class TestHelloWorld(unittest.TestCase):
     def test_get_message_is_string(self):
         self.assertIsInstance(self.hw.get_message(), str)
 
+    def test_get_message_is_not_int(self):
+        self.assertNotIsInstance(self.hw.get_message, int)
+
 if __name__ == "__main__":
     unittest.main()
